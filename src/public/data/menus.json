@@ -1,0 +1,25 @@
+{
+  "menus": [
+    {
+      "menuId": 1,
+      "name": "Burger Sapi",
+      "restaurant": "Gigitan Cepat",
+      "menuPictureId": "./images/burger",
+      "price": 25000
+    },
+    {
+      "menuId": 2,
+      "name": "Steak Sapi",
+      "restaurant": "Run The Gun",
+      "menuPictureId": "./images/steak-sapi",
+      "price": 40000
+    },
+    {
+      "menuId": 3,
+      "name": "Nasi Goreng",
+      "restaurant": "Makan mudah",
+      "menuPictureId": "./images/nasi-goreng",
+      "price": 20000
+    }
+  ]
+}

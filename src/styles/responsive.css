@@ -1,0 +1,115 @@
+@media screen and (max-width: 549px) {
+  .header .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+
+    -webkit-transform: translate(-520px, 122px);
+    transform: translate(-550px, 122px);
+  }
+
+  .header .open {
+    -webkit-transform: translate(0, 122px);
+    transform: translate(0, 122px);
+  }
+
+  .header .nav ul.nav__list{ 
+    flex-direction: column;
+    justify-content: left;
+    background-color: #fff;
+    gap: 0;
+  }
+
+  .header .nav li.nav__item {
+    flex-direction: row;
+    display: list-item;
+    border-bottom: 1px solid #999;
+    width: 100%;
+    text-align: left;
+  }
+
+  .header .nav li.nav__item a { 
+    border-radius: 0;
+  }
+
+  .header .nav li.nav__item:hover a {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .header .header__menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .explore-restaurant__label, .favorite-restaurant__label, .selected-menu__label {
+    font-size: 32px;
+  }
+
+  .restaurant-item__content, .selected-menu-item__content {
+    padding: 16px 32px 32px 32px;
+  }
+
+  .restaurant-item__name, .selected-menu-item__name, .selected-menu-item__price {
+    font-size: 18px;
+  }
+
+  .restaurant-item__description {
+    font-size: 14px;
+  }
+
+  .restaurant {
+    grid-template-columns: auto 1fr;
+  }
+ 
+  .restaurant .restaurant__name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+ 
+  .restaurant .restaurant__description {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .restaurant .restaurant__menus {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .restaurant .restaurant__reviews {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .restaurants, .selected-menus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+
+  .restaurant-item__thumbnail, .selected-menu-item__thumbnail {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .restaurants, .selected-menus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    max-width: 1200px;
+  }
+}
